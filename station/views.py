@@ -4,7 +4,7 @@ from station.models import Cs, UserCs
 
 def index(request):
     css = Cs.objects.all()
-    return render(request, 'ListCS.html', {"css", css})
+    return render(request, 'ListCS.html', {"css": css})
 
 
 def show_focus_station(request):

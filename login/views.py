@@ -22,7 +22,7 @@ def login_action(request):
                 request.session['userTel'] = session_user.userTel
                 request.session['userName'] = session_user.userName
                 request.session['userMail'] = session_user.userMail
-                return HttpResponseRedirect('/ListCS/')
+                return HttpResponseRedirect('/index/')
             else:
                 return render(request, 'login.html')
     else:

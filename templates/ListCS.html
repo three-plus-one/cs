@@ -157,12 +157,12 @@
                         <th>距离空闲时间</th>
                         <th>是否关注</th>
                     </tr>
-                    {% for user_cs in user_css %}
+                    {% for cs in css %}
                     <tr>
-                        <td class="csid">{{ user_cs.csId.csId }}</td>
-                        <td >{{ user_cs.csId.csAdd }}</td>
-                         <td >{{ user_cs.csId.csStates }}</td>
-                        <td >{{ user_cs.csId.csFreeTime}}</td>
+                        <td class="csid">{{ cs.csId }}</td>
+                        <td >{{ cs.csAdd }}</td>
+                         <td >{{ cs.csStates }}</td>
+                        <td >{{ cs.csFreeTime}}</td>
 
                     </tr>
                     {% endfor %}
